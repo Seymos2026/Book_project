@@ -1,0 +1,20 @@
+# Dependencies — never commit these; they are installed with npm install
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment variables — NEVER commit secrets
+.env
+
+# Build output
+client/dist/
+client/build/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
