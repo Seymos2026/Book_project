@@ -8,7 +8,7 @@ const app  = express()
 const PORT = process.env.PORT || 5000
 
 // ── Middleware ────────────────────────────────────────────────────
-app.use(cors({ origin: 'http://localhost:5173' }))  // allow React dev server
+app.use(cors({ origin: process.env.CLIENT_URL || '*'  }))  // allow React dev server
 app.use(express.json())                             // parse JSON request bodies
 
 // ── Routes ───────────────────────────────────────────────────────
