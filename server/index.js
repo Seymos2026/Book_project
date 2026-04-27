@@ -5,7 +5,7 @@ const cors      = require('cors')
 const bookRoutes = require('./routes/books')
 
 const app  = express()
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 5001
 
 // ── Middleware ────────────────────────────────────────────────────
 app.use(cors({ origin: process.env.CLIENT_URL || '*'  }))  // allow React dev server
